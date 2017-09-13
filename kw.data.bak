@@ -1,0 +1,32 @@
+{
+                        'T1': {
+                                        'keyword': '域名注册',
+                                        'targeturl_keyword': 'xinnet.com',
+                                        'runtime': 3,
+                        },
+                        'T2': {
+                                        'keyword': '虚拟主机',
+                                        'targeturl_keyword': 'xinnet.com',
+                                        'runtime': 6,
+                        },
+                        'T3': {
+                                        'keyword': '虚拟空间',
+                                        'targeturl_keyword': 'xinnet.com',
+                                        'runtime': 3,
+                        },
+                        'T4': {
+                                        'keyword': '企业邮箱',
+                                        'targeturl_keyword': 'xinnet.com',
+                                        'runtime': 6,
+                        },
+                        'T5': {
+                                        'keyword': '云主机',
+                                        'targeturl_keyword': 'xinnet.com',
+                                        'runtime': 3,
+                        },
+                        'T6': {
+                                        'keyword': '云服务器',
+                                        'targeturl_keyword': 'xinnet.com',
+                                        'runtime': 6,
+                        },
+}
