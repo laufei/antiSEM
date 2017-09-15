@@ -1,6 +1,6 @@
 # coding: utf-8
 __author__ = 'liufei'
-import time
+import time, sys
 import random
 import threading
 from threading import Thread
@@ -27,7 +27,6 @@ class antiSEM(page, Thread):
         # 常量设置
         self.PagesCount = 3     # 搜索结果页面中，遍历结果页面数量
         self.radio_sorted = 0.7  # 首页正序随机点击URL比例
-        self.baidu_keywords = [u'百度', u'_相关']
         self.output_Result(info=self.print_task_list(self.SearchKeywords, self.URLKeywords, self.Runtime))
         # 设置线程为后台线程, 并启动线程
         self.setDaemon(True)
@@ -94,7 +93,7 @@ class antiSEM(page, Thread):
         except Exception, e:
             self.output_Result(info=str(e))
             wx.CallAfter(pub.sendMessage, "reset")
-            exit("Failed to run~!")
+            sys.exit("Failed to run~!")
 
     def end(self):
         try:

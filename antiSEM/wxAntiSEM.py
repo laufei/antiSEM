@@ -375,6 +375,9 @@ class wxAntiSEM(wx.Frame, page):
             self.kwText.SetLabel(kwfilename)
             self.multiText.SetValue(self.note)
             self.task = self.kyFileHeadle(kwfilename)
+            if len(self.task.keys()) > 6:
+                self.errInfo(u"配置文件中最多设置6个关键词！")
+                self.kwText.SetLabel(u"关键词文件种最多设置6个关键词！")
         dlg.Destroy()
 
     def OnOpenProxyFile(self, evt):
@@ -483,8 +486,9 @@ class wxAntiSEM(wx.Frame, page):
                 self.errInfo(u"创建关键词模板文件失败!")
 
     def getThreadTextObj(self, id):
-        ThreadTextObj = [self.multiText, self.multiText1, self.multiText2, self.multiText3, self.multiText4, self.multiText5, self.multiText6]
-        return ThreadTextObj[id]
+            ThreadTextObj = [self.multiText, self.multiText1, self.multiText2, self.multiText3, self.multiText4, self.multiText5, self.multiText6]
+            return ThreadTextObj[id]
+
 
     def errInfo(self, log, mode=0, threadID=0):
             self.getThreadTextObj(threadID).SetDefaultStyle(wx.TextAttr("RED"))
