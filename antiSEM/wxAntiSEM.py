@@ -9,7 +9,7 @@ from element.page import page
 from data.data import data
 from antiSEM import antiSEM
 
-class wxAntiSEM(wx.Frame, page):
+class wxAntiSEM(wx.Frame):
     def __init__(self):
         wx.Frame.__init__(self, parent=None, title=u'反SEM刷点击小工具 v1.0', size=(935, 700), style=wx.MAXIMIZE_BOX|wx.CLOSE_BOX)
         self.data = data()
@@ -20,14 +20,6 @@ class wxAntiSEM(wx.Frame, page):
         # self.font = wx.Font(9, wx.SWISS, wx.NORMAL, wx.NORMAL, False)
         self.update()
         self.Bind(wx.EVT_CLOSE, self.OnClickStop)
-        # 添加drivers到环境变量
-        if platform.system() == "Darwin":
-            self.dir = os.environ["HOME"]+os.sep+"drivers"+os.sep
-            self.gdname = "geckodriver-v0.15.0-macos.tar.gz"
-        elif platform.system() == "Windows":
-            self.dir = os.environ["USERPROFILE"]+os.sep+"drivers"+os.sep
-            self.gdname = "geckodriver-v0.15.0-win64.zip"
-        os.environ["PATH"] += ':' + self.dir
 
         self.controllers()
         self.ui_design()

@@ -7905,3 +7905,68 @@ firefox: Message: 'geckodriver' executable needs to be in PATH.
 【Thread-1】：当前关键词 - 域名注册
 firefox: Message: 'geckodriver' executable needs to be in PATH. 
 
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+----------------------------------------------
+[2017-09-16 04:19:11] 当前使用代理: 36.251.248.76:80
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+firefox: Message: 'geckodriver.exe' executable needs to be in PATH. 
+
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+firefox: Message: 'geckodriver.exe' executable needs to be in PATH. 
+
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+firefox: Message: 'geckodriver.exe' executable needs to be in PATH. 
+
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+----------------------------------------------
+[2017-09-16 04:36:51] 当前使用代理: 52.80.73.98:33862
