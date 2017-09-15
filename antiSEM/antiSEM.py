@@ -101,8 +101,8 @@ class antiSEM(page, Thread):
         except:
             pass
 
-    def updateResultInfo(self, threadname, succtime, runtime):
-        wx.CallAfter(pub.sendMessage, "succTime", threadName=threadname, value=succtime)
+    def updateResultInfo(self, threadid, succtime, runtime):
+        wx.CallAfter(pub.sendMessage, "succTime", threadID=threadid, value=succtime)
         process = succtime*100/self.Runtime
         wx.CallAfter(pub.sendMessage, "process", value=process)
         try:

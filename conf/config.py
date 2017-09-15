@@ -40,7 +40,7 @@ class config:
                 ]
             try:
                 self.driver = webdriver.PhantomJS(
-                    executable_path="%s\\drivers\\phantomjs.exe" % os.environ["USERPROFILE"],
+                    # executable_path="%s\\drivers\\phantomjs.exe" % os.environ["USERPROFILE"],
                     desired_capabilities=caps,
                     service_args=service_args,
                     )
@@ -59,15 +59,15 @@ class config:
             profile.update_preferences()
             try:
                 self.driver = webdriver.Firefox(
-                    executable_path="%s\\drivers\\geckodriver.exe" % os.environ["USERPROFILE"],
+                    # executable_path="%s\\drivers\\geckodriver.exe" % os.environ["USERPROFILE"],
                     firefox_profile=profile,
                     )
             except Exception, e:
                 assert False, "firefox: " + str(e)
 
         elif driverConfig.endswith("chrome"):
-            chromedriver = "%s\\drivers\\chromedriver.exe" % os.environ["USERPROFILE"]
-            os.environ["webdriver.chrome.driver"] = chromedriver
+            # chromedriver = "%s\\drivers\\chromedriver.exe" % os.environ["USERPROFILE"]
+            # os.environ["webdriver.chrome.driver"] = chromedriver
             mobile_emulation = {"deviceName": "Google Nexus 5"}
             option = webdriver.ChromeOptions()
             option.add_experimental_option("mobileEmulation", mobile_emulation)
