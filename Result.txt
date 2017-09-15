@@ -6881,3 +6881,897 @@ Message:
      [尝试点击] - 点击结果页面第[4]个链接
      [白名单] - 广告链接处于白名单, 跳过~
      [尝试点击] - 点击结果页面第[3]个链接
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004CEC080>: Failed to establish a new connection: [Errno 10061] ',))
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-2】：当前关键词 - 域名注册
+----------------------------------------------
+[2017-09-13 11:57:45] 当前使用代理: 202.202.90.20:8080
+     [获取失败] - 该结果页并没有获取到广告链接
+----------------------------------------------
+[2017-09-13 11:58:20] 当前使用代理: 47.93.63.47:8888
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+----------------------------------------------
+[2017-09-15 13:43:15] 当前使用代理: 61.160.208.222:8080
+ [2017-09-15 13:43:19]  Failed to open this page! 
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+firefox: Message: connection reset
+
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+firefox: 'HOME'
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-2】：当前关键词 - 域名注册
+firefox: 'HOME'
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+firefox: 'HOME'
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+firefox: Message: '' executable may have wrong permissions. 
+
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 云服务器
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 企业邮箱
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 云服务器
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 云主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-2】：当前关键词 - 企业邮箱
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 虚拟主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-3】：当前关键词 - 云主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 虚拟空间
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-4】：当前关键词 - 虚拟主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-5】：当前关键词 - 虚拟空间
+【Thread-6】：当前关键词 - 域名注册
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004DD74E0>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004DEC4E0>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004DECD30>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004E030F0>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C3A7F0>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004E032E8>: Failed to establish a new connection: [Errno 10061] ',))
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 云服务器
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-7】：当前关键词 - 云服务器
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 企业邮箱
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 云主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-8】：当前关键词 - 企业邮箱
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 虚拟主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-9】：当前关键词 - 云主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 虚拟空间
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-10】：当前关键词 - 虚拟主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-11】：当前关键词 - 虚拟空间
+【Thread-12】：当前关键词 - 域名注册
+----------------------------------------------
+[2017-09-15 14:57:13] 当前使用代理: 124.238.235.135:81
+----------------------------------------------
+----------------------------------------------
+[2017-09-15 14:57:14] 当前使用代理: 47.94.81.119:8888
+----------------------------------------------
+[2017-09-15 14:57:14] 当前使用代理: 120.25.211.80:9999
+[2017-09-15 14:57:14] 当前使用代理: 61.160.208.222:8080
+----------------------------------------------
+[2017-09-15 14:57:16] 当前使用代理: 106.14.51.145:8118
+----------------------------------------------
+[2017-09-15 14:57:18] 当前使用代理: 122.228.253.55:808
+     [尝试点击] - 点击结果页面第[5]个链接
+     [尝试点击] - 点击结果页面第[1]个链接
+     [尝试点击] - 点击结果页面第[2]个链接
+     [尝试点击] - 点击结果页面第[1]个链接
+     [尝试点击] - 点击结果页面第[4]个链接
+     [尝试点击] - 点击结果页面第[2]个链接
+     [尝试点击] - 点击结果页面第[3]个链接
+     [获取失败] - 该结果页并没有获取到广告链接
+     [尝试点击] - 点击结果页面第[3]个链接
+     [尝试点击] - 点击结果页面第[8]个链接
+     [尝试点击] - 点击结果页面第[4]个链接
+     [尝试点击] - 点击结果页面第[5]个链接
+     [尝试点击] - 点击结果页面第[7]个链接
+     [获取失败] - 该结果页并没有获取到广告链接
+----------------------------------------------
+[2017-09-15 14:58:09] 当前使用代理: 124.238.235.135:81
+ [2017-09-15 14:58:11]  Failed to open this page! 
+----------------------------------------------
+[2017-09-15 14:58:15] 当前使用代理: 183.240.87.229:8080
+----------------------------------------------
+[2017-09-15 14:58:20] 当前使用代理: 121.40.213.161:80
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 云服务器
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 云服务器
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 企业邮箱
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 云主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-2】：当前关键词 - 企业邮箱
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 虚拟主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-3】：当前关键词 - 云主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 虚拟空间
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-4】：当前关键词 - 虚拟主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-5】：当前关键词 - 虚拟空间
+【Thread-6】：当前关键词 - 域名注册
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004D72550>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004D9A4A8>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004D9A5C0>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004D9AF98>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004DB22B0>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004D9A358>: Failed to establish a new connection: [Errno 10061] ',))
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 云服务器
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 企业邮箱
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 云主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-7】：当前关键词 - 云服务器
+【Thread-8】：当前关键词 - 企业邮箱
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 虚拟主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-9】：当前关键词 - 云主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 虚拟空间
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-10】：当前关键词 - 虚拟主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-11】：当前关键词 - 虚拟空间
+【Thread-12】：当前关键词 - 域名注册
+----------------------------------------------
+[2017-09-15 15:02:25] 当前使用代理: 121.196.226.246:84
+----------------------------------------------
+[2017-09-15 15:02:26] 当前使用代理: 110.189.153.33:53281
+----------------------------------------------
+[2017-09-15 15:02:27] 当前使用代理: 110.189.153.33:53281
+----------------------------------------------
+[2017-09-15 15:02:32] 当前使用代理: 120.24.208.42:9999
+----------------------------------------------
+[2017-09-15 15:02:34] 当前使用代理: 124.238.235.135:81
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 云服务器
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 云服务器
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 企业邮箱
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 云主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-2】：当前关键词 - 企业邮箱
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 虚拟主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-3】：当前关键词 - 云主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 虚拟空间
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-4】：当前关键词 - 虚拟主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-5】：当前关键词 - 虚拟空间
+【Thread-6】：当前关键词 - 域名注册
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C60630>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C4C9E8>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C76080>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C60C50>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004AB3860>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C76278>: Failed to establish a new connection: [Errno 10061] ',))
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 云服务器
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 企业邮箱
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 云服务器
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 云主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-2】：当前关键词 - 企业邮箱
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 虚拟主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-3】：当前关键词 - 云主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 虚拟空间
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-4】：当前关键词 - 虚拟主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-5】：当前关键词 - 虚拟空间
+【Thread-6】：当前关键词 - 域名注册
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004ADA978>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C66F60>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C90DA0>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004CA6128>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C90D30>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004CA6358>: Failed to establish a new connection: [Errno 10061] ',))
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 云服务器
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 企业邮箱
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 云服务器
+【Thread-2】：当前关键词 - 企业邮箱
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 云主机
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 虚拟主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-3】：当前关键词 - 云主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 虚拟空间
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-4】：当前关键词 - 虚拟主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-5】：当前关键词 - 虚拟空间
+【Thread-6】：当前关键词 - 域名注册
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C9B320>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004CAE588>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004CC4048>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004CAEE48>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004CC42E8>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004AFA358>: Failed to establish a new connection: [Errno 10061] ',))
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 云服务器
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 企业邮箱
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-7】：当前关键词 - 云服务器
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 云主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-8】：当前关键词 - 企业邮箱
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 虚拟主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-9】：当前关键词 - 云主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 虚拟空间
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-10】：当前关键词 - 虚拟主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-11】：当前关键词 - 虚拟空间
+【Thread-12】：当前关键词 - 域名注册
+----------------------------------------------
+[2017-09-15 15:10:22] 当前使用代理: 120.25.211.80:9999
+----------------------------------------------
+[2017-09-15 15:10:29] 当前使用代理: 120.24.208.42:9999
+----------------------------------------------
+[2017-09-15 15:10:33] 当前使用代理: 124.133.230.254:80
+----------------------------------------------
+[2017-09-15 15:10:37] 当前使用代理: 36.251.248.76:80
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 云服务器
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 云服务器
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 企业邮箱
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-2】：当前关键词 - 企业邮箱
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 云主机
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 虚拟主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-3】：当前关键词 - 云主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 虚拟空间
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-4】：当前关键词 - 虚拟主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-5】：当前关键词 - 虚拟空间
+【Thread-6】：当前关键词 - 域名注册
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004AADF98>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C3F1D0>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C505F8>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C6A128>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C2D160>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C6A2B0>: Failed to establish a new connection: [Errno 10061] ',))
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 云服务器
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 企业邮箱
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 云主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-7】：当前关键词 - 云服务器
+【Thread-8】：当前关键词 - 企业邮箱
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 6
+        【搜索关键词】: 虚拟主机
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-9】：当前关键词 - 云主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 虚拟空间
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-10】：当前关键词 - 虚拟主机
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-11】：当前关键词 - 虚拟空间
+【Thread-12】：当前关键词 - 域名注册
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C3F400>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C50E48>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C505F8>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C502B0>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C6E128>: Failed to establish a new connection: [Errno 10061] ',))
+HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /?types=0&count=300 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000000004C6E3C8>: Failed to establish a new connection: [Errno 10061] ',))
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+----------------------------------------------
+[2017-09-15 16:35:45] 当前使用代理: 124.238.235.135:81
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+firefox: Message: 'geckodriver.exe' executable needs to be in PATH. 
+
