@@ -3,15 +3,13 @@ __author__ = 'liufei'
 import time, sys
 import random
 import threading
-from threading import Thread
 import wx
 from wx.lib.pubsub import pub
 from element.page import page
 from data.data import data
 
-class antiSEM(page, Thread):
+class antiSEM(page):
     def __init__(self, searcher, driverType, isPhantomjs, proxyType, proxyConfig, keyworks, urlkw, runtime):
-        Thread.__init__(self)
         #搜索关键词
         self.data = data()
         self.searcher = searcher
@@ -28,16 +26,9 @@ class antiSEM(page, Thread):
         self.PagesCount = 3     # 搜索结果页面中，遍历结果页面数量
         self.radio_sorted = 0.7  # 首页正序随机点击URL比例
         self.output_Result(info=self.print_task_list(self.SearchKeywords, self.URLKeywords, self.Runtime))
-        # 设置线程为后台线程, 并启动线程
-        self.setDaemon(True)
-        self.start()
 
     def __del__(self):
         self.end()
-
-    def run(self):
-        self.getMethod(self.searcher, self.driverType)
-        self.output_Result(log="[run] Thread: %s Finished" % threading.currentThread().getName())
 
     def print_task_list(self, keyworks, urlkw, runtime):
         template = u'''
@@ -71,18 +62,18 @@ class antiSEM(page, Thread):
     def getSearcher(self):
         return "百度" if self.searcher == 0 else ("神马" if self.searcher == 1 else "搜狗")
 
-    def getMethod(self, searcher, driverType):
-        if [searcher, driverType] == [0, 0]:
+    def getMethod(self):
+        if [self.searcher, self.driverType] == [0, 0]:
             self.rank_baidu_web()
-        if [searcher, driverType] == [0, 1]:
+        if [self.searcher, self.driverType] == [0, 1]:
             self.rank_baidu_m()
-        if [searcher, driverType] == [1, 0]:
+        if [self.searcher, self.driverType] == [1, 0]:
             self.rank_sm_m()
-        if [searcher, driverType] == [1, 1]:
+        if [self.searcher, self.driverType] == [1, 1]:
             self.rank_sm_web()
-        if [searcher, driverType] == [2, 0]:
+        if [self.searcher, self.driverType] == [2, 0]:
             self.rank_sogou_m()
-        if [searcher, driverType] == [2, 1]:
+        if [self.searcher, self.driverType] == [2, 1]:
             self.rank_sogou_web()
 
     def begin(self):

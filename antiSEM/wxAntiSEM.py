@@ -5,11 +5,12 @@ import os, time, datetime
 import platform
 import wx, wx.html
 from wx.lib.pubsub import pub
+from threading import Thread
 from element.page import page
 from data.data import data
 from antiSEM import antiSEM
 
-class wxAntiSEM(wx.Frame, page):
+class wxAntiSEM(wx.Frame):
     def __init__(self):
         wx.Frame.__init__(self, parent=None, title=u'反SEM刷点击小工具 v1.0', size=(935, 700), style=wx.MAXIMIZE_BOX|wx.CLOSE_BOX)
         self.data = data()
@@ -361,8 +362,10 @@ class wxAntiSEM(wx.Frame, page):
             keyword = value["keyword"]
             targetkw = value['targeturl_keyword']
             runtime = allRuntime if allRuntime else value['runtime']
-            antiSEM(searcher, driverType, isPhantomjs, self.proxyType, self.proxyConfig, keyword, targetkw, int(runtime))
-
+            asobj = antiSEM(searcher, driverType, isPhantomjs, self.proxyType, self.proxyConfig, keyword, targetkw, int(runtime))
+            t = Thread(target=asobj.getMethod)
+            t.setDaemon(True)
+            t.start()
 
     def OnClickStop(self, evt):
         ret = wx.MessageBox(u"确定要关闭吗?", "", wx.YES_NO)
