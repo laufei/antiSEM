@@ -11,13 +11,13 @@ from antiSEM import antiSEM
 
 class wxAntiSEM(wx.Frame, page):
     def __init__(self):
-        wx.Frame.__init__(self, parent=None, title=u'反SEM刷点击小工具 v1.0', size=(935, 700))
+        wx.Frame.__init__(self, parent=None, title=u'反SEM刷点击小工具 v1.0', size=(935, 700), style=wx.MAXIMIZE_BOX|wx.CLOSE_BOX)
         self.data = data()
         self.task, self.urlkw, self.proxyType, self.proxyConfig, self.antiSEMobj = "", "", "", "", None
         self.proValue, self.spend = 0, 0
         self.note = self.data.note
         self.threadNote = self.data.threadNote
-        self.font = wx.Font(9, wx.SWISS, wx.NORMAL, wx.NORMAL, False)
+        # self.font = wx.Font(9, wx.SWISS, wx.NORMAL, wx.NORMAL, False)
         self.update()
         self.Bind(wx.EVT_CLOSE, self.OnClickStop)
         # 添加drivers到环境变量
@@ -39,7 +39,7 @@ class wxAntiSEM(wx.Frame, page):
         self.Bind(wx.EVT_TIMER, self.OnTimer, self.timer)
         # 运行log
         self.om = wx.StaticBox(self, -1, u"▼ 运行日志:")
-        self.multiText = wx.TextCtrl(self, 0, value=self.note, size=(320, 255), style=wx.TE_MULTILINE|wx.TE_READONLY)
+        self.multiText = wx.TextCtrl(self, 0, value=self.note, size=(320, 248), style=wx.TE_MULTILINE|wx.TE_READONLY)
         self.multiText.SetInsertionPoint(0)
         self.multiText.SetBackgroundColour('#AFAF61')
         self.om1 = wx.StaticBox(self, -1, u"▼ Thread - 1:")
@@ -70,17 +70,17 @@ class wxAntiSEM(wx.Frame, page):
         # 选择搜索引擎: baidu, sm, sogou
         self.sm = wx.StaticBox(self, -1, u"▼ 搜索平台:")
         spfList = ["Baidu", "SM", "Sogou"]
-        self.rb_splatform = wx.RadioBox(self, -1, "", wx.DefaultPosition, (125, 100), spfList, 3, wx.SL_VERTICAL)
+        self.rb_splatform = wx.RadioBox(self, -1, "", wx.DefaultPosition, (140, 100), spfList, 3, wx.SL_VERTICAL)
         # 选择平台：web，h5
         self.dm = wx.StaticBox(self, -1, u"▼ 运行平台:")
         pfList = ["Web", "H5"]
-        self.rb_platform = wx.RadioBox(self, -1, "", wx.DefaultPosition, (120, 60), pfList, 2, wx.SL_HORIZONTAL)
+        self.rb_platform = wx.RadioBox(self, -1, "", wx.DefaultPosition, (140, 60), pfList, 2, wx.SL_HORIZONTAL)
         # 是否使用模拟浏览器
         self.cb_isPhantomjs = wx.CheckBox(self, -1, u"模拟浏览器?", wx.DefaultPosition, (120, 30))
 
         self.fm = wx.StaticBox(self, -1, u"▼ 搜索关键词文件路径:")
-        self.kwText = wx.TextCtrl(self, -1, value=u"点击右侧按钮选择文件...", size=(215, 21), style=wx.TE_READONLY)
-        self.kwText.SetFont(self.font)
+        self.kwText = wx.TextCtrl(self, -1, value=u"点击右侧按钮选择文件...", size=(250, 21), style=wx.TE_READONLY)
+        # self.kwText.SetFont(self.font)
         self.kwBtn = wx.Button(self, label='...', size=(30, 21))
         self.Bind(wx.EVT_BUTTON, self.OnOpenKWFile, self.kwBtn)
         self.tmpBtn = wx.Button(self, label='+', size=(30, 21))
@@ -88,22 +88,22 @@ class wxAntiSEM(wx.Frame, page):
         # 关键词运行次数
         self.rm = wx.StaticBox(self, -1, u"▼ 运行次数:")
         self.runTime = wx.CheckBox(self, -1, u"是否统一配置?  输入运行次数:")
-        self.runText = wx.TextCtrl(self, -1, size=(70, 21))
+        self.runText = wx.TextCtrl(self, -1, size=(105, 21))
         self.runText.SetEditable(False)
         self.runText.SetValue("100")
         self.Bind(wx.EVT_CHECKBOX, self.EvtCheckBox_RT, self.runTime)
         # 选择代理方式：Local, api，txt
         self.pm = wx.StaticBox(self, -1, u"▼ 代理方式:")
         sampleList = ["API", "Local", "TXT"]
-        self.rb_proxy = wx.RadioBox(self, -1, "", wx.DefaultPosition, (180, 45), sampleList, 3)
+        self.rb_proxy = wx.RadioBox(self, -1, "", wx.DefaultPosition, (200, 45), sampleList, 3)
         self.proxyType = self.rb_proxy.GetItemLabel(self.rb_proxy.GetSelection())
         self.Bind(wx.EVT_RADIOBOX, self.EvtRadioBox_Proxy, self.rb_proxy)
         self.proxyTextBtn = wx.Button(self, label='...', size=(30, 21))
         self.proxyTextBtn.Hide()
         self.Bind(wx.EVT_BUTTON, self.OnOpenProxyFile, self.proxyTextBtn)
         # 代理DNS，API, TXT配置输入框
-        self.proxyText = wx.TextCtrl(self, -1, value=self.data.proxy_api, size=(215, 21))
-        self.proxyText.SetFont(self.font)
+        self.proxyText = wx.TextCtrl(self, -1, value=self.data.proxy_api, size=(200, 21))
+        # self.proxyText.SetFont(self.font)
         # 代理数量显示
         self.apiCount, self.dnsCount = 0, 0
         try:
@@ -119,10 +119,11 @@ class wxAntiSEM(wx.Frame, page):
         # 版权模块
         self.copyRight = wx.StaticText(self, -1, u"© LiuFei      mail: goodlf@qq.com", style=1)
         self.spendTime = wx.StaticText(self, -1, u"▶ 耗时: 00:00:00  ")
-        self.succTime = wx.StaticText(self, -1, u"▶ 当前进程: ---   ▶ 成功次数: 0  ")
+        self.curThread = wx.StaticText(self, -1, u"▶ 当前进程ID: None  ")
+        self.succTime = wx.StaticText(self, -1, u"▶ 成功次数: 0  ")
         self.succRatio = wx.StaticText(self, -1, u"▶ 成功率: 0.0  ")
         self.proText = wx.StaticText(self, -1, u"▶ 进度:")
-        self.process = wx.Gauge(self, -1, size=(160, 20), style=wx.GA_HORIZONTAL)
+        self.process = wx.Gauge(self, -1, size=(150, 20), style=wx.GA_HORIZONTAL)
         self.Bind(wx.EVT_IDLE, self.Onprocess)
         # 运行按钮
         self.buttonRun = wx.Button(self, label=u"运行")
@@ -175,6 +176,7 @@ class wxAntiSEM(wx.Frame, page):
         processBox1.Add(self.spendTime, 0, wx.ALL, 5)
         processBox1.Add(self.proText, 0, wx.ALL, 5)
         processBox1.Add(self.process, 0, wx.ALL, 5)
+        processBox2.Add(self.curThread, 0, wx.ALL, 5)
         processBox2.Add(self.succTime, 0, wx.ALL, 5)
         processBox2.Add(self.succRatio, 0, wx.ALL, 5)
         runInfoBox.Add(processBox1, 0, wx.ALL, 5)
@@ -271,8 +273,9 @@ class wxAntiSEM(wx.Frame, page):
     def getProcess(self, value):
         self.proValue = value
 
-    def setSuccTime(self, threadName, value):
-        self.succTime.SetLabel(u"▶ 当前进程: %s   ▶ 成功次数: %d  " % (threadName, value))
+    def setSuccTime(self, threadID, value):
+        self.curThread.SetLabel(u"▶ 当前进程ID: %s  " % threadID)
+        self.succTime.SetLabel(u"▶ 成功次数: %d  " % value)
 
     def setSuccRatio(self, value):
         self.succRatio.SetLabel(u"▶ 成功率: %s  " % value)

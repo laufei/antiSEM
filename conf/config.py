@@ -79,7 +79,7 @@ class config:
 
             try:
                 self.driver = webdriver.Chrome(
-                    # executable_path=chromedriver,
+                    executable_path=chromedriver,
                     chrome_options=option)
             except Exception, e:
                 assert False, "chrome: " + str(e)

@@ -116,7 +116,7 @@ class antiSEM(page, Thread):
         threadID = int(threadname[-1])
         succtime, runtime = 0, 0         # succtime: 记录当前关键字下成功点击次数;     runtime: 记录当前关键字下所有点击次数
         # succTimeAll, succRatio = 0, 0   # succTimeAll: 记录当前任务下总的成功点击次数;     succRatio: 记录当前关键字下所有点击成功率
-        self.updateResultInfo(threadname, succtime, runtime)
+        self.updateResultInfo(threadID, succtime, runtime)
         self.output_Result(info=u"【%s】：当前关键词 - %s" % (threadname, self.SearchKeywords), mode=1, threadID=threadID)
         while True:
             if int(self.Runtime) == int(succtime):
@@ -137,7 +137,7 @@ class antiSEM(page, Thread):
                 self.pageobj.find_element(*self.baidu_submit).click()
                 time.sleep(self.data.toSearchPage_waittime)
             except Exception, e:
-                self.updateResultInfo(threadname, succtime, runtime)
+                self.updateResultInfo(threadID, succtime, runtime)
                 self.output_Result(log=str(e), threadID=threadID)
                 self.end()
                 continue
@@ -147,7 +147,7 @@ class antiSEM(page, Thread):
             if not len(baidu_result_ad_items):
                 self.output_Result(info=u"     [获取失败] - 该结果页并没有获取到广告链接", threadID=threadID)
                 self.end()
-                self.updateResultInfo(threadname, succtime, runtime)
+                self.updateResultInfo(threadID, succtime, runtime)
                 continue
             # 按照比例随机点击URL，正序80%，乱序20%
             ra = random.random()
@@ -172,7 +172,7 @@ class antiSEM(page, Thread):
 
             succtime += 1
             self.end()
-            self.updateResultInfo(threadname, succtime, runtime)
+            self.updateResultInfo(threadID, succtime, runtime)
         self.output_Result(info=u"进程[%s]结束, 当前关键词, 成功点击%d次" % (threadname, succtime))
 
     def rank_baidu_m(self):
