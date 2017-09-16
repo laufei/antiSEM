@@ -13,6 +13,7 @@ from antiSEM import antiSEM
 class wxAntiSEM(wx.Frame):
     def __init__(self):
         wx.Frame.__init__(self, parent=None, title=u'反SEM刷点击小工具 v1.0', size=(935, 700), style=wx.MAXIMIZE_BOX|wx.CLOSE_BOX)
+        self.workThreads = []
         self.data = data()
         self.task, self.urlkw, self.proxyType, self.proxyConfig, self.antiSEMobj = "", "", "", "", None
         self.proValue, self.spend = 0, 0
@@ -33,6 +34,9 @@ class wxAntiSEM(wx.Frame):
         self.controllers()
         self.ui_design()
 
+    def __del__(self):
+        print "wxAntiSEM is end"
+
     def controllers(self):
         # 创建定时器
         self.beginTime = 0
@@ -42,7 +46,6 @@ class wxAntiSEM(wx.Frame):
         self.om = wx.StaticBox(self, -1, u"▼ 运行日志:")
         self.multiText = wx.TextCtrl(self, 0, value=self.note, size=(320, 248), style=wx.TE_MULTILINE|wx.TE_READONLY)
         self.multiText.SetInsertionPoint(0)
-        self.multiText.SetBackgroundColour('#FFF0AC')
         self.om1 = wx.StaticBox(self, -1, u"▼ Thread - 1:")
         self.multiText1 = wx.TextCtrl(self, -1, value=self.threadNote, size=(320, 100), style=wx.TE_MULTILINE|wx.TE_READONLY)
         self.multiText1.SetInsertionPoint(0)
@@ -118,7 +121,7 @@ class wxAntiSEM(wx.Frame):
 
         self.proxyCount = wx.StaticText(self, -1, label=" |%d" % self.apiCount, size=(100, 21))
         # 版权模块
-        self.copyRight = wx.StaticText(self, -1, u"© LiuFei      mail: goodlf@qq.com", style=1)
+        self.copyRight = wx.StaticText(self, -1, u"© LiuFei | Mail: goodlf@qq.com", style=1)
         self.spendTime = wx.StaticText(self, -1, u"▶ 耗时: 00:00:00  ")
         self.curThread = wx.StaticText(self, -1, u"▶ 当前进程ID: None  ")
         self.succTime = wx.StaticText(self, -1, u"▶ 成功次数: 0  ")
@@ -364,12 +367,16 @@ class wxAntiSEM(wx.Frame):
             runtime = allRuntime if allRuntime else value['runtime']
             asobj = antiSEM(searcher, driverType, isPhantomjs, self.proxyType, self.proxyConfig, keyword, targetkw, int(runtime))
             t = Thread(target=asobj.getMethod)
+            self.workThreads.append(asobj)
             t.setDaemon(True)
             t.start()
 
     def OnClickStop(self, evt):
         ret = wx.MessageBox(u"确定要关闭吗?", "", wx.YES_NO)
         if ret == wx.YES:
+            if [] != self.workThreads:
+                for w in self.workThreads:
+                    w.end()
             self.Destroy()
             wx.GetApp().ExitMainLoop()
 
@@ -537,4 +544,3 @@ class wxAntiSEM(wx.Frame):
 
 if __name__ == "__main__":
     wr = wxAntiSEM()
-    wr.get_data_from_db()

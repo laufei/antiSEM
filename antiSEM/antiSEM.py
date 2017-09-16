@@ -32,13 +32,13 @@ class antiSEM(page):
 
     def print_task_list(self, keyworks, urlkw, runtime):
         template = u'''
-        ===============
-        【运行平台】: %s
-        【Driver类型】: %s
-        【搜索平台】: %s
-        【目标执行次数】: %s
-        【搜索关键词】: %s
-        【白名单关键字】: %s
+===========
+【运行平台】: %s
+【Driver类型】: %s
+【搜索平台】: %s
+【目标执行次数】: %s
+【搜索关键词】: %s
+【白名单关键字】: %s
 
         ''' %(
             self.getdriverType(self.isPhantomjs).split("_")[0],
@@ -63,6 +63,7 @@ class antiSEM(page):
         return "百度" if self.searcher == 0 else ("神马" if self.searcher == 1 else "搜狗")
 
     def getMethod(self):
+        print "getMethod thread name =", threading.currentThread().getName()
         if [self.searcher, self.driverType] == [0, 0]:
             self.rank_baidu_web()
         if [self.searcher, self.driverType] == [0, 1]:
@@ -87,10 +88,7 @@ class antiSEM(page):
             sys.exit("Failed to run~!")
 
     def end(self):
-        try:
             self.pageobj.quit()
-        except:
-            pass
 
     def updateResultInfo(self, threadid, succtime, runtime):
         wx.CallAfter(pub.sendMessage, "succTime", threadID=threadid, value=succtime)
@@ -104,6 +102,7 @@ class antiSEM(page):
 
     def rank_baidu_web(self):
         threadname = threading.currentThread().getName()
+        print "rank_baidu_web thread name = ", threading.currentThread().getName()
         threadID = int(threadname[-1])
         succtime, runtime = 0, 0         # succtime: 记录当前关键字下成功点击次数;     runtime: 记录当前关键字下所有点击次数
         # succTimeAll, succRatio = 0, 0   # succTimeAll: 记录当前任务下总的成功点击次数;     succRatio: 记录当前关键字下所有点击成功率
