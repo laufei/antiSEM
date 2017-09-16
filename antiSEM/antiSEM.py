@@ -1,6 +1,6 @@
 # coding: utf-8
 __author__ = 'liufei'
-import time, sys
+import time, sys, os
 import random
 import threading
 import wx
@@ -63,7 +63,6 @@ class antiSEM(page):
         return "百度" if self.searcher == 0 else ("神马" if self.searcher == 1 else "搜狗")
 
     def getMethod(self):
-        print "getMethod thread name =", threading.currentThread().getName()
         if [self.searcher, self.driverType] == [0, 0]:
             self.rank_baidu_web()
         if [self.searcher, self.driverType] == [0, 1]:
@@ -88,7 +87,10 @@ class antiSEM(page):
             sys.exit("Failed to run~!")
 
     def end(self):
+        try:
             self.pageobj.quit()
+        except Exception as e:
+            print e
 
     def updateResultInfo(self, threadid, succtime, runtime):
         wx.CallAfter(pub.sendMessage, "succTime", threadID=threadid, value=succtime)
@@ -102,7 +104,6 @@ class antiSEM(page):
 
     def rank_baidu_web(self):
         threadname = threading.currentThread().getName()
-        print "rank_baidu_web thread name = ", threading.currentThread().getName()
         threadID = int(threadname[-1])
         succtime, runtime = 0, 0         # succtime: 记录当前关键字下成功点击次数;     runtime: 记录当前关键字下所有点击次数
         # succTimeAll, succRatio = 0, 0   # succTimeAll: 记录当前任务下总的成功点击次数;     succRatio: 记录当前关键字下所有点击成功率

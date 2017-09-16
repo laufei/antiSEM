@@ -34,9 +34,6 @@ class wxAntiSEM(wx.Frame):
         self.controllers()
         self.ui_design()
 
-    def __del__(self):
-        print "wxAntiSEM is end"
-
     def controllers(self):
         # 创建定时器
         self.beginTime = 0
@@ -49,27 +46,27 @@ class wxAntiSEM(wx.Frame):
         self.om1 = wx.StaticBox(self, -1, u"▼ Thread - 1:")
         self.multiText1 = wx.TextCtrl(self, -1, value=self.threadNote, size=(320, 100), style=wx.TE_MULTILINE|wx.TE_READONLY)
         self.multiText1.SetInsertionPoint(0)
-        self.multiText1.SetBackgroundColour('#FFB090')
+        self.multiText1.SetBackgroundColour('#66CC66')
         self.om2 = wx.StaticBox(self, -1, u"▼ Thread - 2:")
         self.multiText2 = wx.TextCtrl(self, -1, value=self.threadNote, size=(320, 100), style=wx.TE_MULTILINE|wx.TE_READONLY)
         self.multiText2.SetInsertionPoint(0)
-        self.multiText2.SetBackgroundColour('#FFB090')
+        self.multiText2.SetBackgroundColour('#66CC66')
         self.om3 = wx.StaticBox(self, -1, u"▼ Thread - 3:")
         self.multiText3 = wx.TextCtrl(self, -1, value=self.threadNote, size=(320, 100), style=wx.TE_MULTILINE|wx.TE_READONLY)
         self.multiText3.SetInsertionPoint(0)
-        self.multiText3.SetBackgroundColour('#FFB090')
+        self.multiText3.SetBackgroundColour('#66CC66')
         self.om4 = wx.StaticBox(self, -1, u"▼ Thread - 4:")
         self.multiText4 = wx.TextCtrl(self, -1, value=self.threadNote, size=(320, 100), style=wx.TE_MULTILINE|wx.TE_READONLY)
         self.multiText4.SetInsertionPoint(0)
-        self.multiText4.SetBackgroundColour('#FFB090')
+        self.multiText4.SetBackgroundColour('#66CC66')
         self.om5 = wx.StaticBox(self, -1, u"▼ Thread - 5:")
         self.multiText5 = wx.TextCtrl(self, -1, value=self.threadNote, size=(320, 100), style=wx.TE_MULTILINE|wx.TE_READONLY)
         self.multiText5.SetInsertionPoint(0)
-        self.multiText5.SetBackgroundColour('#FFB090')
+        self.multiText5.SetBackgroundColour('#66CC66')
         self.om6 = wx.StaticBox(self, -1, u"▼ Thread - 6:")
         self.multiText6 = wx.TextCtrl(self, -1, value=self.threadNote, size=(320, 100), style=wx.TE_MULTILINE|wx.TE_READONLY)
         self.multiText6.SetInsertionPoint(0)
-        self.multiText6.SetBackgroundColour('#FFB090')
+        self.multiText6.SetBackgroundColour('#66CC66')
 
         # 选择搜索引擎: baidu, sm, sogou
         self.sm = wx.StaticBox(self, -1, u"▼ 搜索平台:")
@@ -366,19 +363,23 @@ class wxAntiSEM(wx.Frame):
             targetkw = value['targeturl_keyword']
             runtime = allRuntime if allRuntime else value['runtime']
             asobj = antiSEM(searcher, driverType, isPhantomjs, self.proxyType, self.proxyConfig, keyword, targetkw, int(runtime))
-            t = Thread(target=asobj.getMethod)
             self.workThreads.append(asobj)
+            t = Thread(target=asobj.getMethod)
             t.setDaemon(True)
             t.start()
 
     def OnClickStop(self, evt):
         ret = wx.MessageBox(u"确定要关闭吗?", "", wx.YES_NO)
         if ret == wx.YES:
-            if [] != self.workThreads:
-                for w in self.workThreads:
-                    w.end()
+            self.end()
             self.Destroy()
             wx.GetApp().ExitMainLoop()
+
+    def end(self):
+        if [] != self.workThreads:
+            for w in self.workThreads:
+                time.sleep(2)
+                w.end()
 
     def OnOpenKWFile(self, evt):
         file_wildcard = "All files(*.*)|*.*"
@@ -500,8 +501,8 @@ class wxAntiSEM(wx.Frame):
 
     def getThreadTextObj(self, id):
             ThreadTextObj = [self.multiText, self.multiText1, self.multiText2, self.multiText3, self.multiText4, self.multiText5, self.multiText6]
+            if 0 != id:ThreadTextObj[id].SetBackgroundColour('#B55555')
             return ThreadTextObj[id]
-
 
     def errInfo(self, log, mode=0, threadID=0):
             self.getThreadTextObj(threadID).SetDefaultStyle(wx.TextAttr("RED"))
