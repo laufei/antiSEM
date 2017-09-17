@@ -88,14 +88,16 @@ class antiSEM(page):
 
     def end(self):
         try:
-            self.pageobj.stop()
             self.pageobj.quit()
         except Exception as e:
-            pass
+            print e
 
     def updateResultInfo(self, threadid, succtime, runtime):
         wx.CallAfter(pub.sendMessage, "succTime", threadID=threadid, value=succtime)
-        process = succtime*100/self.Runtime
+        try:
+            process = succtime*100/self.Runtime
+        except ZeroDivisionError as e:
+            process = 0
         wx.CallAfter(pub.sendMessage, "process", value=process)
         try:
             succRatio = round(succtime/float(runtime), 2)
@@ -165,6 +167,7 @@ class antiSEM(page):
             succtime += 1
             self.end()
             self.updateResultInfo(threadID, succtime, runtime)
+        wx.CallAfter(pub.sendMessage, "runStop")
         self.output_Result(info=u"线程[%s]结束, 当前关键词, 成功点击%d次" % (threadname, succtime))
 
     def rank_baidu_m(self):

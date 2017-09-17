@@ -2,12 +2,7 @@
                         'T1': {
                                         'keyword': '域名注册',
                                         'targeturl_keyword': 'xinnet.com',
-                                        'runtime': 3,
-                        },
-                        'T2': {
-                                        'keyword': '虚拟主机',
-                                        'targeturl_keyword': 'xinnet.com',
-                                        'runtime': 6,
+                                        'runtime': 1,
                         },
 
 }

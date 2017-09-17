@@ -14,6 +14,7 @@ class wxAntiSEM(wx.Frame):
     def __init__(self):
         wx.Frame.__init__(self, parent=None, title=u'反SEM刷点击小工具 v1.0', size=(935, 700), style=wx.MAXIMIZE_BOX|wx.CLOSE_BOX)
         self.workThreads = []
+        self.finishedThreads = 0
         self.data = data()
         self.task, self.urlkw, self.proxyType, self.proxyConfig, self.antiSEMobj = "", "", "", "", None
         self.proValue, self.spend = 0, 0
@@ -116,7 +117,7 @@ class wxAntiSEM(wx.Frame):
         except:
             self.errInfo(u'Local代理方式下: 并没有获取到代理数量. ', True)
 
-        self.proxyCount = wx.StaticText(self, -1, label=" |%d" % self.apiCount, size=(100, 21))
+        self.proxyCount = wx.StaticText(self, -1, label=" | 代理数量 %d" % self.apiCount, size=(100, 21))
         # 版权模块
         self.copyRight = wx.StaticText(self, -1, u"© LiuFei | Mail: goodlf@qq.com", style=1)
         self.spendTime = wx.StaticText(self, -1, u"▶ 耗时: 00:00:00  ")
@@ -313,19 +314,19 @@ class wxAntiSEM(wx.Frame):
         self.proxyText.SetValue(self.data.proxy_api)
         self.proxyText.SetEditable(True)
         self.proxyTextBtn.Hide()
-        self.proxyCount.SetLabel(" |%d" % self.apiCount)
+        self.proxyCount.SetLabel(" | 代理数量 %d" % self.apiCount)
 
     def OnClickDNS(self, evt):
         self.proxyText.Enable()
         self.proxyText.SetValue(self.data.proxy_dns)
         self.proxyText.SetEditable(True)
         self.proxyTextBtn.Hide()
-        self.proxyCount.SetLabel(" |%d" % self.dnsCount)
+        self.proxyCount.SetLabel(" | 代理数量 %d" % self.dnsCount)
 
     def OnClickTXT(self, evt):
         self.proxyText.Disable()
         self.proxyText.SetValue(u"点击右侧按钮选择文件...")
-        self.proxyCount.SetLabel(" |0")
+        self.proxyCount.SetLabel(" | 代理数量 0")
         self.proxyTextBtn.Show()
         self.Layout()
 
@@ -376,7 +377,7 @@ class wxAntiSEM(wx.Frame):
             wx.GetApp().ExitMainLoop()
 
     def end(self):
-        if [] != self.workThreads:
+        if self.workThreads:
             for w in self.workThreads:
                 w.end()
                 time.sleep(2)
@@ -402,7 +403,7 @@ class wxAntiSEM(wx.Frame):
             self.proxyText.SetValue(kwfilename)
             self.proxyConfig = kwfilename
             self.multiText.SetValue(self.note)
-            self.proxyCount.SetLabel(" |%d" % self.getProxyCount("TXT", kwfilename))
+            self.proxyCount.SetLabel(" | 代理数量 %d" % self.getProxyCount("TXT", kwfilename))
         dlg.Destroy()
 
     def kyFileHeadle(self, filename):
@@ -505,12 +506,12 @@ class wxAntiSEM(wx.Frame):
             return ThreadTextObj[id]
 
     def errInfo(self, log, mode=0, threadID=0):
-            self.getThreadTextObj(threadID).SetDefaultStyle(wx.TextAttr("RED"))
+            self.getThreadTextObj(threadID).SetDefaultStyle(wx.TextAttr("red"))
             if not mode:
                 self.getThreadTextObj(threadID).SetValue("\n\n" + log)
             else:
                 self.getThreadTextObj(threadID).AppendText(log)
-            self.getThreadTextObj(threadID).SetDefaultStyle(wx.TextAttr("BLACK"))
+            self.getThreadTextObj(threadID).SetDefaultStyle(wx.TextAttr("black"))
 
     def printLog(self, info, mode=0, threadID=0):
         if not mode:
@@ -531,6 +532,14 @@ class wxAntiSEM(wx.Frame):
         self.buttonStop.SetLabel(u"关闭")
         self.OnStop()
 
+    def runStop(self):
+        self.finishedThreads += 1
+        if self.finishedThreads == len(self.workThreads):
+            self.buttonRun.Enable(False)
+            self.buttonRun.SetLabel(u"已结束")
+            self.buttonStop.SetLabel(u"关闭")
+            self.OnStop()
+
     def closeApp(self):
         wx.GetApp().ExitMainLoop()
 
@@ -542,6 +551,7 @@ class wxAntiSEM(wx.Frame):
         pub.subscribe(self.setSuccTime, "succTime")
         pub.subscribe(self.setSuccRatio, "succRatio")
         pub.subscribe(self.closeApp, "close")
+        pub.subscribe(self.runStop, "runStop")
 
 if __name__ == "__main__":
     wr = wxAntiSEM()

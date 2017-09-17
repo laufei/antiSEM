@@ -29,7 +29,7 @@ class base():
                     self.proxy = u"获取代理失败, 请检查代理配置!"
             else:
                 self.proxy = u"获取代理失败, 请检查代理配置!"
-            # print u"当前使用的代理服务器：%s" % self.proxy
+            print u"当前使用的代理服务器：%s" % self.proxy
         else:
             self.proxy = ""
         self.data = data()
@@ -123,30 +123,29 @@ class base():
 
     def gotoURL(self, url):
         try:
-            # print u"     正在打开页面：", url
+            print u"     正在打开页面：", url
             self.driver.get(url)
             # if self.platform.startswith("web"):
                 # self.driver.maximize_window()
             time.sleep(1)
             self.driver.refresh()
             if self.driver.current_url.startswith("http://"):
-                # print u"     自动跳转到http页面, 打开该页面失败！"
+                print u"     自动跳转到http页面, 打开该页面失败！"
                 assert False, "Went to http page, failed to open https page! "
             time.sleep(self.data.openURL_waittime)
         except TimeoutException:
-            # print u"     打开该页面超时！"
+            print u"     打开该页面超时！"
             self.driver.execute_script("window.stop()")
             assert False, "Timed out waiting for page load! "
         except Exception:
-            # print u"     打开该页面失败！"
+            print u"     打开该页面失败！"
             assert False, "Failed to open this page! "
 
     def quit(self):
         try:
             self.driver.quit()
         except Exception, e:
-            pass
-            # print u"关闭浏览器失败:", e
+            print u"关闭浏览器失败:", e
 
     def is_element_present(self, how, what):
         try:
@@ -157,7 +156,7 @@ class base():
 
     def isPageOpened(self, by, value):
         if not self.is_element_present(by, value):
-            # print u"     打开该页面失败！"
+            print u"     打开该页面失败！"
             assert False, "Unable to open this page!"
 
     def waitForPageLoad(self, how, what):
@@ -166,7 +165,7 @@ class base():
                                                   "Wait for element <" + what + "> time out!")
             return True
         except TimeoutException, e:
-            # print u"     打开该页面超时！"
+            print u"     打开该页面超时！"
             assert False, "Wait for element <%s> time out!" % what
 
     def goto_other_window(self):
