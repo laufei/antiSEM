@@ -88,9 +88,10 @@ class antiSEM(page):
 
     def end(self):
         try:
+            self.pageobj.stop()
             self.pageobj.quit()
         except Exception as e:
-            print e
+            pass
 
     def updateResultInfo(self, threadid, succtime, runtime):
         wx.CallAfter(pub.sendMessage, "succTime", threadID=threadid, value=succtime)
@@ -164,7 +165,7 @@ class antiSEM(page):
             succtime += 1
             self.end()
             self.updateResultInfo(threadID, succtime, runtime)
-        self.output_Result(info=u"进程[%s]结束, 当前关键词, 成功点击%d次" % (threadname, succtime))
+        self.output_Result(info=u"线程[%s]结束, 当前关键词, 成功点击%d次" % (threadname, succtime))
 
     def rank_baidu_m(self):
         wx.CallAfter(self.output_Result, log=u"该功能尚未支持!")

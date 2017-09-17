@@ -22,7 +22,7 @@ class data:
         self.proxy_api = "http://127.0.0.1:8000/?types=0&count=300"
         self.proxy_txt = "proxy.txt"
 
-        self.threadNote = u"当前进程状态 -【空闲】"
+        self.threadNote = u"当前线程状态 -【空闲】"
         self.note = u'''【使用说明】:
  1. 搜索平台&运行平台: 可以选择各个搜索平台对应的H5或者Web平台进行操作.
  2. 关键词文件路径: 文件名须为"kw.data"; 点击生成模板按钮"+", 查看具体文件格式.

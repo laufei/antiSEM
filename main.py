@@ -4,5 +4,5 @@ __author__ = 'liufei'
 import wx
 from antiSEM.wxAntiSEM import wxAntiSEM
 app = wx.App()
-wxAntiSEM()
+wxAntiSEM().Show()
 app.MainLoop()
