@@ -13,6 +13,7 @@ sys.setdefaultencoding('utf8')
 
 class config:
     def __init__(self, driverConfig, proxy=""):
+        self.remote_hub_ip = "http://192.168.99.100:4444/wd/hub"
         self.UA = ua()
         if driverConfig.startswith("web"):
             self.uaValue = random.choice(self.UA.USER_AGENTS_WEB)
@@ -39,10 +40,11 @@ class config:
                 "--proxy-type=http",
                 ]
             try:
-                self.driver = webdriver.PhantomJS(
+                self.driver = webdriver.Remote(
                     # executable_path="%s/drivers/" % os.environ["HOME"],
                     desired_capabilities=caps,
                     service_args=service_args,
+                    command_executor=self.remote_hub_ip,
                     )
             except Exception, e:
                 assert False, "phantomjs: " + str(e)
@@ -58,10 +60,11 @@ class config:
             )
             profile.update_preferences()
             try:
-                self.driver = webdriver.Firefox(
+                self.driver = webdriver.Remote(
                     # executable_path="%s/drivers/" % os.environ["HOME"],
                     firefox_profile=profile,
-                    )
+                    command_executor=self.remote_hub_ip,
+                    desired_capabilities=DesiredCapabilities.FIREFOX)
             except Exception, e:
                 assert False, "firefox: " + str(e)
 
@@ -81,9 +84,11 @@ class config:
             option.add_experimental_option("prefs", {'profile.default_content_settings.images': 2})       # disable images in chromedriver
 
             try:
-                self.driver = webdriver.Chrome(
+                self.driver = webdriver.Remote(
                     # executable_path=chromedriver,
-                    chrome_options=option)
+                    chrome_options=option,
+                    command_executor=self.remote_hub_ip,
+                    desired_capabilities=DesiredCapabilities.CHROME)
             except Exception, e:
                 assert False, "chrome: " + str(e)
         self.setDriver(driverConfig)
