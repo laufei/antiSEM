@@ -43,7 +43,7 @@ class config:
                 self.driver = webdriver.Remote(
                     # executable_path="%s/drivers/" % os.environ["HOME"],
                     desired_capabilities=caps,
-                    service_args=service_args,
+                    browser_profile=service_args,
                     command_executor=self.remote_hub_ip,
                     )
             except Exception, e:
@@ -62,8 +62,8 @@ class config:
             try:
                 self.driver = webdriver.Remote(
                     # executable_path="%s/drivers/" % os.environ["HOME"],
-                    firefox_profile=profile,
                     command_executor=self.remote_hub_ip,
+                    browser_profile=profile,
                     desired_capabilities=DesiredCapabilities.FIREFOX)
             except Exception, e:
                 assert False, "firefox: " + str(e)
@@ -74,7 +74,7 @@ class config:
             elif platform.system() == "Windows":
                 chromedriver = "C:\chromedriver\chromedriver.exe"
             os.environ["webdriver.chrome.driver"] = chromedriver
-            mobile_emulation = {"deviceName": "Google Nexus 5"}
+            mobile_emulation = {"deviceName": "iPhone 6 Plus"}
             option = webdriver.ChromeOptions()
             option.add_experimental_option("mobileEmulation", mobile_emulation)
             option.add_argument('--allow-running-insecure-content')
@@ -86,9 +86,8 @@ class config:
             try:
                 self.driver = webdriver.Remote(
                     # executable_path=chromedriver,
-                    chrome_options=option,
                     command_executor=self.remote_hub_ip,
-                    desired_capabilities=DesiredCapabilities.CHROME)
+                    desired_capabilities=option.to_capabilities())
             except Exception, e:
                 assert False, "chrome: " + str(e)
         self.setDriver(driverConfig)

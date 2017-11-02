@@ -6952,3 +6952,416 @@ Message:
 ----------------------------------------------
 [2017-09-13 11:52:25] 当前使用代理: 47.94.81.119:8888
      [获取失败] - 该结果页并没有获取到广告链接
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: chrome
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+chrome: __init__() got an unexpected keyword argument 'chrome_options'
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: chrome
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+chrome: Message: unknown error: cannot parse capability: chromeOptions
+from unknown error: cannot parse mobileEmulation
+from unknown error: 'Google Nexus 5' must be a valid device
+from unknown error: must be a valid device
+  (Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 4.4.84-boot2docker x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: '25f6319af1b2', ip: '172.17.0.3', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.84-boot2docker', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (NativeConstructorAccessorImpl.java:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (NativeConstructorAccessorImpl.java:62)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (DelegatingConstructorAccessorImpl.java:45)
+    at java.lang.reflect.Constructor.newInstance (Constructor.java:423)
+    at org.openqa.selenium.remote.ErrorHandler.createThrowable (ErrorHandler.java:214)
+    at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed (ErrorHandler.java:166)
+    at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0 (JsonWireProtocolResponse.java:53)
+    at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2 (JsonWireProtocolResponse.java:91)
+    at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24 (ProtocolHandshake.java:359)
+    at java.util.stream.ReferencePipeline$3$1.accept (ReferencePipeline.java:193)
+    at java.util.Spliterators$ArraySpliterator.tryAdvance (Spliterators.java:958)
+    at java.util.stream.ReferencePipeline.forEachWithCancel (ReferencePipeline.java:126)
+    at java.util.stream.AbstractPipeline.copyIntoWithCancel (AbstractPipeline.java:498)
+    at java.util.stream.AbstractPipeline.copyInto (AbstractPipeline.java:485)
+    at java.util.stream.AbstractPipeline.wrapAndCopyInto (AbstractPipeline.java:471)
+    at java.util.stream.FindOps$FindOp.evaluateSequential (FindOps.java:152)
+    at java.util.stream.AbstractPipeline.evaluate (AbstractPipeline.java:234)
+    at java.util.stream.ReferencePipeline.findFirst (ReferencePipeline.java:464)
+    at org.openqa.selenium.remote.ProtocolHandshake.createSession (ProtocolHandshake.java:362)
+    at org.openqa.selenium.remote.server.ServicedSession$Factory.apply (ServicedSession.java:185)
+    at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$createSession$16 (ActiveSessionFactory.java:171)
+    at java.util.Optional.map (Optional.java:215)
+    at org.openqa.selenium.remote.server.ActiveSessionFactory.createSession (ActiveSessionFactory.java:171)
+    at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute (BeginSession.java:72)
+    at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0 (WebDriverServlet.java:232)
+    at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:511)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:266)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1149)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run (Thread.java:748)
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: chrome
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+----------------------------------------------
+[2017-11-02 18:46:26] 当前使用代理: 54.222.222.79:33862
+ [2017-11-02 18:46:46]  Timed out waiting for page load! 
+----------------------------------------------
+[2017-11-02 18:46:48] 当前使用代理: 116.228.221.54:80
+ [2017-11-02 18:47:03]  Message: no such element: Unable to locate element: {"method":"id","selector":"kw"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 4.4.84-boot2docker x86_64)
+
+----------------------------------------------
+[2017-11-02 18:47:06] 当前使用代理: 114.215.102.168:8081
+ [2017-11-02 18:47:21]  Message: no such element: Unable to locate element: {"method":"id","selector":"kw"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 4.4.84-boot2docker x86_64)
+
+----------------------------------------------
+[2017-11-02 18:47:23] 当前使用代理: 52.80.53.96:33862
+ [2017-11-02 18:47:43]  Timed out waiting for page load! 
+----------------------------------------------
+[2017-11-02 18:47:44] 当前使用代理: 202.110.80.203:80
+ [2017-11-02 18:48:04]  Timed out waiting for page load! 
+----------------------------------------------
+[2017-11-02 18:48:06] 当前使用代理: 1.34.186.132:53281
+ [2017-11-02 18:48:26]  Timed out waiting for page load! 
+----------------------------------------------
+[2017-11-02 18:48:27] 当前使用代理: 110.247.120.50:8998
+ [2017-11-02 18:48:47]  Timed out waiting for page load! 
+----------------------------------------------
+[2017-11-02 18:48:49] 当前使用代理: 218.56.132.158:8080
+ [2017-11-02 18:49:11]  Timed out waiting for page load! 
+----------------------------------------------
+[2017-11-02 18:49:13] 当前使用代理: 124.119.27.98:53281
+ [2017-11-02 18:49:33]  Timed out waiting for page load! 
+----------------------------------------------
+[2017-11-02 18:49:35] 当前使用代理: 103.242.239.13:65103
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: chrome
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: chrome
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: chrome
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-2】：当前关键词 - 域名注册
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: chrome
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-3】：当前关键词 - 域名注册
+【Thread-4】：当前关键词 - 域名注册
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: chrome
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: chrome
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-5】：当前关键词 - 域名注册
+【Thread-6】：当前关键词 - 域名注册
+----------------------------------------------
+[2017-11-02 18:50:16] 当前使用代理: 183.63.140.82:65103
+----------------------------------------------
+[2017-11-02 18:50:16] 当前使用代理: 124.89.177.92:8998
+----------------------------------------------
+[2017-11-02 18:50:17] 当前使用代理: 222.140.5.25:9999
+----------------------------------------------
+[2017-11-02 18:50:18] 当前使用代理: 58.59.173.27:9797
+----------------------------------------------
+[2017-11-02 18:50:18] 当前使用代理: 124.118.16.198:53281
+----------------------------------------------
+[2017-11-02 18:50:19] 当前使用代理: 103.242.239.161:65103
+ [2017-11-02 18:50:33]  Message: no such element: Unable to locate element: {"method":"id","selector":"kw"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 4.4.84-boot2docker x86_64)
+
+----------------------------------------------
+[2017-11-02 18:50:35] 当前使用代理: 218.56.132.155:8080
+ [2017-11-02 18:50:37]  Timed out waiting for page load! 
+ [2017-11-02 18:50:38]  Timed out waiting for page load! 
+ [2017-11-02 18:50:39]  Timed out waiting for page load! 
+----------------------------------------------
+[2017-11-02 18:50:41] 当前使用代理: 120.25.211.80:9999
+----------------------------------------------
+[2017-11-02 18:50:42] 当前使用代理: 112.249.184.205:8888
+----------------------------------------------
+[2017-11-02 18:50:43] 当前使用代理: 94.65.42.101:8080
+ [2017-11-02 18:50:55]  Timed out waiting for page load! 
+ [2017-11-02 18:50:57]  Message: no such element: Unable to locate element: {"method":"id","selector":"kw"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 4.4.84-boot2docker x86_64)
+
+----------------------------------------------
+[2017-11-02 18:50:58] 当前使用代理: 36.36.176.73:8080
+ [2017-11-02 18:50:59]  Message: timeout
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 4.4.84-boot2docker x86_64)
+
+ [2017-11-02 18:51:01]  Message: timeout
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 4.4.84-boot2docker x86_64)
+
+----------------------------------------------
+[2017-11-02 18:51:02] 当前使用代理: 103.38.89.105:3128
+ [2017-11-02 18:51:03]  Timed out waiting for page load! 
+ [2017-11-02 18:51:04]  Timed out waiting for page load! 
+----------------------------------------------
+[2017-11-02 18:51:08] 当前使用代理: 47.93.63.47:8888
+----------------------------------------------
+[2017-11-02 18:51:13] 当前使用代理: 183.172.177.39:8118
+----------------------------------------------
+[2017-11-02 18:51:14] 当前使用代理: 60.255.186.169:8888
+----------------------------------------------
+[2017-11-02 18:51:15] 当前使用代理: 121.12.42.140:61234
+ [2017-11-02 18:51:19]  Timed out waiting for page load! 
+ [2017-11-02 18:51:20]  Message: no such element: Unable to locate element: {"method":"id","selector":"kw"}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 4.4.84-boot2docker x86_64)
+
+ [2017-11-02 18:51:29]  Timed out waiting for page load! 
+----------------------------------------------
+[2017-11-02 18:51:32] 当前使用代理: 36.251.248.76:80
+ [2017-11-02 18:51:34]  Timed out waiting for page load! 
+ [2017-11-02 18:51:35]  Timed out waiting for page load! 
+----------------------------------------------
+[2017-11-02 18:51:37] 当前使用代理: 54.222.156.124:33862
+ [2017-11-02 18:51:37]  Timed out waiting for page load! 
+----------------------------------------------
+[2017-11-02 18:51:43] 当前使用代理: 114.217.8.167:8118
+----------------------------------------------
+[2017-11-02 18:51:44] 当前使用代理: 123.7.38.31:9999
+----------------------------------------------
+[2017-11-02 18:51:45] 当前使用代理: 200.159.136.16:53281
+----------------------------------------------
+[2017-11-02 18:51:45] 当前使用代理: 54.222.218.113:33862
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-1】：当前关键词 - 域名注册
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-2】：当前关键词 - 域名注册
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-3】：当前关键词 - 域名注册
+【Thread-4】：当前关键词 - 域名注册
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+
+        ===============
+        【运行平台】: web
+        【Driver类型】: firefox
+        【搜索平台】: 百度
+        【目标执行次数】: 3
+        【搜索关键词】: 域名注册
+        【白名单关键字】: xinnet.com
+
+        
+【Thread-5】：当前关键词 - 域名注册
+【Thread-6】：当前关键词 - 域名注册
+----------------------------------------------
+[2017-11-02 18:55:00] 当前使用代理: 123.121.25.86:8118
+----------------------------------------------
+[2017-11-02 18:55:00] 当前使用代理: 117.78.37.198:8000
+----------------------------------------------
+[2017-11-02 18:55:00] 当前使用代理: 27.22.51.16:808
+----------------------------------------------
+[2017-11-02 18:55:01] 当前使用代理: 39.108.76.152:8088
+----------------------------------------------
+[2017-11-02 18:55:02] 当前使用代理: 103.242.239.13:65103
+----------------------------------------------
+[2017-11-02 18:55:02] 当前使用代理: 124.152.32.140:53281
+ [2017-11-02 18:55:21]  Timed out waiting for page load! 
+ [2017-11-02 18:55:23]  Message: Failed to find value field
+
+----------------------------------------------
+[2017-11-02 18:55:33] 当前使用代理: 218.18.232.29:8080
+----------------------------------------------
+[2017-11-02 18:55:34] 当前使用代理: 124.42.7.103:80
+     [获取失败] - 该结果页并没有获取到广告链接
+     [获取失败] - 该结果页并没有获取到广告链接
+     [获取失败] - 该结果页并没有获取到广告链接
+----------------------------------------------
+[2017-11-02 18:55:48] 当前使用代理: 120.84.233.10:8080
+----------------------------------------------
+[2017-11-02 18:55:54] 当前使用代理: 122.49.35.168:33128
+----------------------------------------------
+[2017-11-02 18:55:56] 当前使用代理: 218.26.227.108:80
+     [获取失败] - 该结果页并没有获取到广告链接
+----------------------------------------------
+[2017-11-02 18:56:06] 当前使用代理: 116.248.167.62:80
+     [获取失败] - 该结果页并没有获取到广告链接
+----------------------------------------------
+[2017-11-02 18:56:14] 当前使用代理: 118.81.69.210:9797
+     [获取失败] - 该结果页并没有获取到广告链接
+----------------------------------------------
+[2017-11-02 18:56:22] 当前使用代理: 116.7.243.58:53281
+     [获取失败] - 该结果页并没有获取到广告链接
+     [获取失败] - 该结果页并没有获取到广告链接
+----------------------------------------------
+[2017-11-02 18:56:33] 当前使用代理: 112.74.217.140:8080
+     [获取失败] - 该结果页并没有获取到广告链接
+----------------------------------------------
+[2017-11-02 18:56:40] 当前使用代理: 210.29.26.250:80
+     [获取失败] - 该结果页并没有获取到广告链接
+     [白名单] - 广告链接处于白名单, 跳过~
+     [尝试点击] - 点击结果页面第[5]个链接
+     [白名单] - 广告链接处于白名单, 跳过~
+     [尝试点击] - 点击结果页面第[1]个链接
+----------------------------------------------
+[2017-11-02 18:56:47] 当前使用代理: 121.225.84.49:8118
+----------------------------------------------
+[2017-11-02 18:56:55] 当前使用代理: 54.223.175.242:33862
+----------------------------------------------
+[2017-11-02 18:57:00] 当前使用代理: 113.200.214.164:9999
+ [2017-11-02 18:57:01]  Timed out waiting for page load! 
+     [获取失败] - 该结果页并没有获取到广告链接
+----------------------------------------------
+[2017-11-02 18:57:10] 当前使用代理: 27.204.130.104:8998
+----------------------------------------------
+[2017-11-02 18:57:12] 当前使用代理: 222.189.58.28:8998
+     [获取失败] - 该结果页并没有获取到广告链接
+ [2017-11-02 18:57:17]  Message: Failed to find value field
+
+     [获取失败] - 该结果页并没有获取到广告链接
+----------------------------------------------
+[2017-11-02 18:57:27] 当前使用代理: 36.36.176.73:8080
+----------------------------------------------
+[2017-11-02 18:57:28] 当前使用代理: 115.202.187.206:808
+----------------------------------------------
+[2017-11-02 18:57:35] 当前使用代理: 61.153.67.110:9999
+     [获取失败] - 该结果页并没有获取到广告链接
+     [获取失败] - 该结果页并没有获取到广告链接
+----------------------------------------------
+[2017-11-02 18:57:49] 当前使用代理: 218.27.172.137:80
+----------------------------------------------
+[2017-11-02 18:57:53] 当前使用代理: 116.228.221.54:80
+     [获取失败] - 该结果页并没有获取到广告链接
+     [获取失败] - 该结果页并没有获取到广告链接
+     [获取失败] - 该结果页并没有获取到广告链接
+----------------------------------------------
+[2017-11-02 18:58:10] 当前使用代理: 169.239.209.108:53281
+----------------------------------------------
+[2017-11-02 18:58:14] 当前使用代理: 221.4.133.67:53281
+----------------------------------------------
+[2017-11-02 18:58:19] 当前使用代理: 220.160.3.69:808
+     [获取失败] - 该结果页并没有获取到广告链接
+     [获取失败] - 该结果页并没有获取到广告链接
+----------------------------------------------
+[2017-11-02 18:58:30] 当前使用代理: 112.74.217.140:8080
+     [获取失败] - 该结果页并没有获取到广告链接
+----------------------------------------------
+[2017-11-02 18:58:41] 当前使用代理: 203.70.30.100:8080
+     [获取失败] - 该结果页并没有获取到广告链接
+----------------------------------------------
+[2017-11-02 18:58:47] 当前使用代理: 59.46.96.28:8080
+     [获取失败] - 该结果页并没有获取到广告链接

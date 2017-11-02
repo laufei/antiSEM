@@ -4,4 +4,29 @@
                                         'targeturl_keyword': 'xinnet.com',
                                         'runtime': 3,
                         },
+                         'T2': {
+                                        'keyword': '域名注册',
+                                        'targeturl_keyword': 'xinnet.com',
+                                        'runtime': 3,
+                        },
+                         'T3': {
+                                        'keyword': '域名注册',
+                                        'targeturl_keyword': 'xinnet.com',
+                                        'runtime': 3,
+                        },
+                         'T4': {
+                                        'keyword': '域名注册',
+                                        'targeturl_keyword': 'xinnet.com',
+                                        'runtime': 3,
+                        },
+                         'T5': {
+                                        'keyword': '域名注册',
+                                        'targeturl_keyword': 'xinnet.com',
+                                        'runtime': 3,
+                        },
+                         'T6': {
+                                        'keyword': '域名注册',
+                                        'targeturl_keyword': 'xinnet.com',
+                                        'runtime': 3,
+                        },
  }
