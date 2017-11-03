@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b01fb16f-50b4-4893-8425-16b3d6e2d2b8" name="Default" comment="修改为使用Docker">
+    <list default="true" id="b01fb16f-50b4-4893-8425-16b3d6e2d2b8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Result.txt" afterPath="$PROJECT_DIR$/Result.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/config.py" afterPath="$PROJECT_DIR$/conf/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kw.data" afterPath="$PROJECT_DIR$/kw.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/antiSEM/antiSEM.py" afterPath="$PROJECT_DIR$/antiSEM/antiSEM.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/antiSEM/wxAntiSEM.py" afterPath="$PROJECT_DIR$/antiSEM/wxAntiSEM.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/data.py" afterPath="$PROJECT_DIR$/data/data.py" />
     </list>
     <ignored path="antiSEM.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,80 +30,32 @@
     <favorites_list name="antiSEM" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="antiSEM.py" pinned="false" current-in-tab="true">
+    <leaf>
+      <file leaf-file-name="antiSEM.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/antiSEM/antiSEM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.570632">
-              <caret line="65" column="74" selection-start-line="65" selection-start-column="74" selection-end-line="65" selection-end-column="74" />
-              <folding>
-                <element signature="e#38#54#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kw.data" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kw.data">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+              <caret line="172" column="25" selection-start-line="172" selection-start-column="25" selection-end-line="172" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ua.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/ua.py">
+      <file leaf-file-name="data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/data.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.888889">
-              <caret line="75" column="64" selection-start-line="75" selection-start-column="64" selection-end-line="75" selection-end-column="64" />
-              <folding>
-                <element signature="e#39#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-              <folding>
-                <element signature="e#39#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wxAntiSEM.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wxAntiSEM.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/antiSEM/wxAntiSEM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="19.444445">
-              <caret line="299" column="23" selection-start-line="299" selection-start-column="19" selection-end-line="299" selection-end-column="23" />
-              <folding>
-                <element signature="e#39#64#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.33333334">
+              <caret line="268" column="40" selection-start-line="268" selection-start-column="40" selection-end-line="268" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -123,6 +75,8 @@
         <option value="$PROJECT_DIR$/conf/config.py" />
         <option value="$PROJECT_DIR$/kw.data" />
         <option value="$PROJECT_DIR$/antiSEM/antiSEM.py" />
+        <option value="$PROJECT_DIR$/data/data.py" />
+        <option value="$PROJECT_DIR$/antiSEM/wxAntiSEM.py" />
       </list>
     </option>
   </component>
@@ -161,6 +115,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,8 +225,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -278,6 +232,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="SearchEverywhereHistoryKey" value="web_base_Entry_city&#9;null&#9;null&#10;test_web_base_entry_with_poi_level_two&#9;null&#9;null&#10;base_db&#9;null&#9;null&#10;basepage&#9;null&#9;null" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -556,32 +511,38 @@
       <option name="project" value="LOCAL" />
       <updated>1509618563240</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修改为使用Docker">
+      <created>1509620372220</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1509620372220</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="976" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26495728" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26800978" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -671,29 +632,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.38084114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.21946903">
           <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding>
             <element signature="e#39#50#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -707,19 +652,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/antiSEM/wxAntiSEM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="19.444445">
-          <caret line="299" column="23" selection-start-line="299" selection-start-column="19" selection-end-line="299" selection-end-column="23" />
-          <folding>
-            <element signature="e#39#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/ua.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.113274336">
           <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
           <folding />
         </state>
@@ -727,7 +662,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.888889">
+        <state vertical-scroll-proportion="0.3457249">
           <caret line="75" column="64" selection-start-line="75" selection-start-column="64" selection-end-line="75" selection-end-column="64" />
           <folding>
             <element signature="e#39#49#0" expanded="true" />
@@ -735,21 +670,255 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../qyrunner/lib/BasePage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-42.15752">
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../qyrunner/project/web_base_place/TestCase/web_base_Entry_area.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.559292">
+          <caret line="391" column="28" selection-start-line="391" selection-start-column="28" selection-end-line="391" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../qyrunner/db/Base_DB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62300885">
+          <caret line="966" column="44" selection-start-line="966" selection-start-column="44" selection-end-line="966" selection-end-column="44" />
+          <folding>
+            <marker date="1509416987000" expanded="true" signature="683:847" placeholder="SELECT poiid... poi_comment" />
+            <marker date="1509416987000" expanded="true" signature="1158:1295" placeholder="SELECT comme... poi_comment" />
+            <marker date="1509416987000" expanded="true" signature="1594:1650" placeholder="SELECT credi... cdb_members" />
+            <marker date="1509416987000" expanded="true" signature="1943:2003" placeholder="SELECT extcr... cdb_members" />
+            <marker date="1509416987000" expanded="true" signature="2315:2364" placeholder="SELECT credi... credit_rule" />
+            <marker date="1509416987000" expanded="true" signature="2672:2721" placeholder="SELECT credi... credit_rule" />
+            <marker date="1509416987000" expanded="true" signature="3025:3080" placeholder="SELECT credi... credit_rule" />
+            <marker date="1509416987000" expanded="true" signature="3375:3423" placeholder="SELECT `limi... credit_rule" />
+            <marker date="1509416987000" expanded="true" signature="3725:3813" placeholder="SELECT count... place_doings" />
+            <marker date="1509416987000" expanded="true" signature="4161:4249" placeholder="SELECT count... place_doings" />
+            <marker date="1509416987000" expanded="true" signature="4596:4684" placeholder="SELECT count... place_doings" />
+            <marker date="1509416987000" expanded="true" signature="5038:5126" placeholder="SELECT count... place_doings" />
+            <marker date="1509416987000" expanded="true" signature="5511:5597" placeholder="select id fr... poi_comment" />
+            <marker date="1509416987000" expanded="true" signature="5946:6065" placeholder="select id fr... place_comment_country" />
+            <marker date="1509416987000" expanded="true" signature="6408:6501" placeholder="SELECT sourc... poi_comment" />
+            <marker date="1509416987000" expanded="true" signature="6826:6906" placeholder="SELECT id FR... poi_comment" />
+            <marker date="1509416987000" expanded="true" signature="7244:7348" placeholder="SELECT COUNT... poi_comment" />
+            <marker date="1509416987000" expanded="true" signature="7768:8068" placeholder="SELECT count... credit_log_h_missing_value" />
+            <marker date="1509416987000" expanded="true" signature="8400:8715" placeholder="SELECT count... credit_log_h_missing_value" />
+            <marker date="1509416987000" expanded="true" signature="9099:9173" placeholder="SELECT COUNT... poi_comment" />
+            <marker date="1509416987000" expanded="true" signature="9553:9818" placeholder="SELECT pid F... place_doings" />
+            <marker date="1509416987000" expanded="true" signature="9691:9800" placeholder="SELECT poiid... poi_comment" />
+            <marker date="1509416987000" expanded="true" signature="10156:10346" placeholder="select id fr... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="10236:10306" placeholder="select poiid... poi_comment" />
+            <marker date="1509416987000" expanded="true" signature="10685:10959" placeholder="SELECT pid F... place_doings" />
+            <marker date="1509416987000" expanded="true" signature="10790:10841" placeholder="SELECT id FR... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="10871:10941" placeholder="SELECT poiid... poi_comment" />
+            <marker date="1509416987000" expanded="true" signature="11323:11545" placeholder="SELECT DISTI... place_micro_guide" />
+            <marker date="1509416987000" expanded="true" signature="11979:12280" placeholder="SELECT id FR... place_micro_guide" />
+            <marker date="1509416987000" expanded="true" signature="12618:12684" placeholder="SELECT COUNT... place_micro_guide" />
+            <marker date="1509416987000" expanded="true" signature="13061:13157" placeholder="SELECT uid F... common_like" />
+            <marker date="1509416987000" expanded="true" signature="13530:13632" placeholder="select id fr... place_micro_comment" />
+            <marker date="1509416987000" expanded="true" signature="13987:14068" placeholder="select id fr... place_micro_comment" />
+            <marker date="1509416987000" expanded="true" signature="14399:14456" placeholder="SELECT title... place_micro_guide" />
+            <marker date="1509416987000" expanded="true" signature="14768:14877" placeholder="SELECT poi_i... place_micro_guide_item" />
+            <marker date="1509416987000" expanded="true" signature="15255:15419" placeholder="SELECT chine... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="15340:15416" placeholder="SELECT poi_i... place_micro_guide_item" />
+            <marker date="1509416987000" expanded="true" signature="15834:15903" placeholder="SELECT chine... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="16224:16319" placeholder="SELECT COUNT... place_micro_guide_item" />
+            <marker date="1509416987000" expanded="true" signature="16685:17112" placeholder="SELECT micro... place_micro_guide_item" />
+            <marker date="1509416987000" expanded="true" signature="16781:16859" placeholder="SELECT id FR... place_micro_guide" />
+            <marker date="1509416987000" expanded="true" signature="16878:16930" placeholder="SELECT id FR... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="16953:17086" placeholder="SELECT DISTI... poi_comment" />
+            <marker date="1509416987000" expanded="true" signature="17017:17083" placeholder="SELECT pid F... place_ranking" />
+            <marker date="1509416987000" expanded="true" signature="17429:17509" placeholder="select id fr... poi_comment" />
+            <marker date="1509416987000" expanded="true" signature="17819:18113" placeholder="SELECT a.cat... category" />
+            <marker date="1509416987000" expanded="true" signature="18032:18071" placeholder="SELECT cityn... city" />
+            <marker date="1509416987000" expanded="true" signature="18675:18730" placeholder="select caten... category" />
+            <marker date="1509416987000" expanded="true" signature="19270:19579" placeholder="SELECT cityn... city" />
+            <marker date="1509416987000" expanded="true" signature="19408:19530" placeholder="SELECT b.id category" />
+            <marker date="1509416987000" expanded="true" signature="20323:20533" placeholder="SELECT DISTI... business_base_city" />
+            <marker date="1509416987000" expanded="true" signature="20473:20520" placeholder="SELECT id FR... city" />
+            <marker date="1509416987000" expanded="true" signature="20844:20909" placeholder="SELECT cityn... city" />
+            <marker date="1509416987000" expanded="true" signature="21601:21708" placeholder="SELECT id FR... business_base_hotel" />
+            <marker date="1509416987000" expanded="true" signature="22114:22285" placeholder="SELECT locat... business_partner_airbnb" />
+            <marker date="1509416987000" expanded="true" signature="23014:23083" placeholder="SELECT id FR... jn_info" />
+            <marker date="1509416987000" expanded="true" signature="23459:23560" placeholder="SELECT micro... place_micro_guide_belong" />
+            <marker date="1509416987000" expanded="true" signature="23943:24016" placeholder="SELECT id FR... jn_info" />
+            <marker date="1509416987000" expanded="true" signature="24379:24529" placeholder="SELECT locat... business_partner_airbnb" />
+            <marker date="1509416987000" expanded="true" signature="24742:24925" placeholder="SELECT cityn... city" />
+            <marker date="1509416987000" expanded="true" signature="25624:25699" placeholder="SELECT cityn... city" />
+            <marker date="1509416987000" expanded="true" signature="26441:26546" placeholder="select cityn... city" />
+            <marker date="1509416987000" expanded="true" signature="26985:27095" placeholder="select chine... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="27493:27647" placeholder="select id, c... city" />
+            <marker date="1509416987000" expanded="true" signature="28132:28180" placeholder="select relec... city" />
+            <marker date="1509416987000" expanded="true" signature="28404:28516" placeholder="select id, c... city" />
+            <marker date="1509416987000" expanded="true" signature="29000:29056" placeholder="select isare... city" />
+            <marker date="1509416987000" expanded="true" signature="29277:29503" placeholder="select id, c... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="29793:30015" placeholder="select id, c... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="30945:31006" placeholder="SELECT activ... register" />
+            <marker date="1509416987000" expanded="true" signature="31318:31410" placeholder="SELECT email... register" />
+            <marker date="1509416987000" expanded="true" signature="31798:31891" placeholder="SELECT id FR... admin_contrib_poi" />
+            <marker date="1509416987000" expanded="true" signature="32204:32275" placeholder="SELECT code common_activecode" />
+            <marker date="1509416987000" expanded="true" signature="32609:32966" placeholder="select disti... place_entry_contribute" />
+            <marker date="1509416987000" expanded="true" signature="32727:32916" placeholder="select id fr... place_entry" />
+            <marker date="1509416987000" expanded="true" signature="32823:32901" placeholder="select paren... place_entry" />
+            <marker date="1509416987000" expanded="true" signature="33346:33572" placeholder="select FROM_... place_entry" />
+            <marker date="1509416987000" expanded="true" signature="33473:33540" placeholder="select paren... place_entry" />
+            <marker date="1509416987000" expanded="true" signature="33950:34225" placeholder="select id fr... place_entry" />
+            <marker date="1509416987000" expanded="true" signature="33950:34584" placeholder="select id fr... " />
+            <marker date="1509416987000" expanded="true" signature="34133:34224" placeholder="select id fr... place_entry" />
+            <marker date="1509416987000" expanded="true" signature="34254:34584" placeholder="select disti... place_entry" />
+            <marker date="1509416987000" expanded="true" signature="34473:34583" placeholder="select id fr... place_entry" />
+            <marker date="1509416987000" expanded="true" signature="35034:35341" placeholder="select id fr... place_entry" />
+            <marker date="1509416987000" expanded="true" signature="35230:35340" placeholder="select id fr... place_entry" />
+            <marker date="1509416987000" expanded="true" signature="35744:35885" placeholder="select id fr... place_entry_contribute" />
+            <marker date="1509416987000" expanded="true" signature="36301:36403" placeholder="select id fr... place_entry_contribute" />
+            <marker date="1509416987000" expanded="true" signature="36750:36813" placeholder="select state... place_entry_contribute" />
+            <marker date="1509416987000" expanded="true" signature="37180:37561" placeholder="select a.id,... place_entry_data" />
+            <marker date="1509416987000" expanded="true" signature="37426:37548" placeholder="SELECT id FR... category" />
+            <marker date="1509416987000" expanded="true" signature="37493:37532" placeholder="SELECT cityn... city" />
+            <marker date="1509416987000" expanded="true" signature="37890:38275" placeholder="select a.id,... place_entry_data" />
+            <marker date="1509416987000" expanded="true" signature="38142:38262" placeholder="SELECT id FR... city" />
+            <marker date="1509416987000" expanded="true" signature="38549:38616" placeholder="select id fr... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="39051:39288" placeholder="SELECT id FR... country" />
+            <marker date="1509416987000" expanded="true" signature="39102:39247" placeholder="SELECT a.id country" />
+            <marker date="1509416987000" expanded="true" signature="39207:39246" placeholder="SELECT cityn... city" />
+            <marker date="1509416987000" expanded="true" signature="39599:39653" placeholder="select count... city" />
+            <marker date="1509416987000" expanded="true" signature="39961:40017" placeholder="select cityi... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="40324:40604" placeholder="select DISTI... place_micro_guide_belong" />
+            <marker date="1509416987000" expanded="true" signature="40964:41106" placeholder="select disti... place_micro_guide_belong" />
+            <marker date="1509416987000" expanded="true" signature="41473:41521" placeholder="select relec... city" />
+            <marker date="1509416987000" expanded="true" signature="41949:42122" placeholder="select disti... place_micro_guide_belong" />
+            <marker date="1509416987000" expanded="true" signature="42504:42550" placeholder="select isare... city" />
+            <marker date="1509416987000" expanded="true" signature="42976:43816" placeholder="select * fro... cityid" />
+            <marker date="1509416987000" expanded="true" signature="42991:43706" placeholder="select e.cit... cityid" />
+            <marker date="1509416987000" expanded="true" signature="43024:43330" placeholder="select a.cit... cityid" />
+            <marker date="1509416987000" expanded="true" signature="43046:43154" placeholder="select cityi... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="43183:43291" placeholder="select cityi... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="43359:43667" placeholder="select c.cit... cityid" />
+            <marker date="1509416987000" expanded="true" signature="43381:43490" placeholder="select cityi... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="43519:43628" placeholder="select cityi... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="44123:44353" placeholder="select count... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="44250:44352" placeholder="select tag_i... place_category_tag" />
+            <marker date="1509416987000" expanded="true" signature="44670:44952" placeholder="select count... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="44740:44789" placeholder="select id fr... city" />
+            <marker date="1509416987000" expanded="true" signature="44849:44951" placeholder="select tag_i... place_category_tag" />
+            <marker date="1509416987000" expanded="true" signature="45266:45314" placeholder="select relec... city" />
+            <marker date="1509416987000" expanded="true" signature="45539:45772" placeholder="select count... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="45669:45771" placeholder="select tag_i... place_category_tag" />
+            <marker date="1509416987000" expanded="true" signature="46064:46350" placeholder="select count... place_poi_tag_city_h_missing_value" />
+            <marker date="1509416987000" expanded="true" signature="46264:46349" placeholder="select tag_i... place_category_tag" />
+            <marker date="1509416987000" expanded="true" signature="46753:46819" placeholder="select id fr... city" />
+            <marker date="1509416987000" expanded="true" signature="46973:47259" placeholder="select count... place_poi_tag_city_h_missing_value" />
+            <marker date="1509416987000" expanded="true" signature="47173:47258" placeholder="select tag_i... place_category_tag" />
+            <marker date="1509416987000" expanded="true" signature="47745:47793" placeholder="select relec... city" />
+            <marker date="1509416987000" expanded="true" signature="48068:48358" placeholder="select count... place_poi_tag_city_h_missing_value" />
+            <marker date="1509416987000" expanded="true" signature="48272:48357" placeholder="select tag_i... place_category_tag" />
+            <marker date="1509416987000" expanded="true" signature="48936:48984" placeholder="select relec... city" />
+            <marker date="1509416987000" expanded="true" signature="49437:49590" placeholder="select catei... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="50128:50316" placeholder="select catei... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="50196:50245" placeholder="select id fr... city" />
+            <marker date="1509416987000" expanded="true" signature="50895:51034" placeholder="select catei... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="51623:51729" placeholder="SELECT id FR... city" />
+            <marker date="1509416987000" expanded="true" signature="52036:52101" placeholder="select cityn... city" />
+            <marker date="1509416987000" expanded="true" signature="52789:52858" placeholder="SELECT id FR... jn_info" />
+            <marker date="1509416987000" expanded="true" signature="53240:53423" placeholder="select disti... place_micro_guide" />
+            <marker date="1509416987000" expanded="true" signature="53307:53399" placeholder="select micro... place_micro_guide_item" />
+            <marker date="1509416987000" expanded="true" signature="53938:53986" placeholder="select relec... city" />
+            <marker date="1509416987000" expanded="true" signature="54439:54573" placeholder="select catei... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="55111:55280" placeholder="select catei... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="55179:55228" placeholder="select id fr... city" />
+            <marker date="1509416987000" expanded="true" signature="55859:55979" placeholder="select catei... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="56580:56661" placeholder="select id fr... album_userphoto" />
+            <marker date="1509416987000" expanded="true" signature="56963:57108" placeholder="select lm_id... home_lastminute" />
+            <marker date="1509416987000" expanded="true" signature="57514:57611" placeholder="select plant... place_doings" />
+            <marker date="1509416987000" expanded="true" signature="58128:58362" placeholder="select b.cit... place_doings" />
+            <marker date="1509416987000" expanded="true" signature="58670:58865" placeholder="select b.pid... category" />
+            <marker date="1509416987000" expanded="true" signature="59293:59488" placeholder="select b.pid... category" />
+            <marker date="1509416987000" expanded="true" signature="59906:59963" placeholder="select overa... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="60263:60382" placeholder="select caten... category" />
+            <marker date="1509416987000" expanded="true" signature="60328:60378" placeholder="select tagid... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="60758:60872" placeholder="select intro... place_poi_data" />
+            <marker date="1509416987000" expanded="true" signature="61426:61480" placeholder="select mapst... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="61787:62158" placeholder="select a.poi... search_poi_lastm" />
+            <marker date="1509416987000" expanded="true" signature="62518:62929" placeholder="select disti... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="62578:62807" placeholder="select poi_i... place_poi_tag_city_h_missing_value" />
+            <marker date="1509416987000" expanded="true" signature="62706:62806" placeholder="select tag_i... place_category_tag" />
+            <marker date="1509416987000" expanded="true" signature="63376:63752" placeholder="select disti... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="63436:63635" placeholder="select poi_i... place_poi_tag_city_h_missing_value" />
+            <marker date="1509416987000" expanded="true" signature="63564:63634" placeholder="select tag_i... place_category_tag" />
+            <marker date="1509416987000" expanded="true" signature="64222:64633" placeholder="select a.tag... place_poi_tag_city_h_missing_value" />
+            <marker date="1509416987000" expanded="true" signature="64477:64551" placeholder="select tag_i... place_category_tag" />
+            <marker date="1509416987000" expanded="true" signature="65417:65467" placeholder="select edito... city" />
+            <marker date="1509416987000" expanded="true" signature="67043:67381" placeholder="select a.id place_micro_guide" />
+            <marker date="1509416987000" expanded="true" signature="68018:68168" placeholder="select id, t... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="68830:69191" placeholder="select tag_i... place_poi_tag_city_h_missing_value" />
+            <marker date="1509416987000" expanded="true" signature="69069:69158" placeholder="select tag_i... place_category_tag" />
+            <marker date="1509416987000" expanded="true" signature="69787:69969" placeholder="select disti... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="70567:70828" placeholder="select id, t... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="71241:71291" placeholder="select tagid... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="71334:71384" placeholder="select tagid... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="71606:71761" placeholder="select count... place_poi" />
+            <marker date="1509416987000" expanded="true" signature="72132:72263" placeholder="select id fr... admin_contrib_poi" />
+            <marker date="1509416987000" expanded="true" signature="72696:72812" placeholder="select id fr... admin_contrib_poi" />
+            <marker date="1509416987000" expanded="true" signature="73279:73369" placeholder="select id fr... admin_contrib_poi" />
+            <marker date="1509416987000" expanded="true" signature="73760:73864" placeholder="select chine... admin_contrib_poi" />
+            <marker date="1509416987000" expanded="true" signature="74271:74374" placeholder="select id, s... place_index_theme" />
+            <marker date="1509416987000" expanded="true" signature="74409:74495" placeholder="select id, s... place_index_theme" />
+            <marker date="1509416987000" expanded="true" signature="74946:75139" placeholder="select a.uid... aupres" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../qyrunner/project/web_base_place/TestCase/web_base_Entry_city.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33274338">
+          <caret line="400" column="8" selection-start-line="400" selection-start-column="8" selection-end-line="400" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kw.data">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.37699115">
           <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39646018">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/antiSEM/antiSEM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.570632">
-          <caret line="65" column="74" selection-start-line="65" selection-start-column="74" selection-end-line="65" selection-end-column="74" />
-          <folding>
-            <element signature="e#38#54#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="172" column="25" selection-start-line="172" selection-start-column="25" selection-end-line="172" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/antiSEM/wxAntiSEM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="268" column="40" selection-start-line="268" selection-start-column="40" selection-end-line="268" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

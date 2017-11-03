@@ -111,7 +111,7 @@ class wxAntiSEM(wx.Frame):
         # 版权模块
         self.copyRight = wx.StaticText(self, -1, u"© LiuFei      mail: goodlf@qq.com", style=1)
         self.spendTime = wx.StaticText(self, -1, u"▶ 耗时: 00:00:00  ")
-        self.curThread = wx.StaticText(self, -1, u"▶ 当前进程ID: None  ")
+        self.curThread = wx.StaticText(self, -1, u"▶ 当前线程ID: None  ")
         self.succTime = wx.StaticText(self, -1, u"▶ 成功次数: 0  ")
         self.succRatio = wx.StaticText(self, -1, u"▶ 成功率: 0.0  ")
         self.proText = wx.StaticText(self, -1, u"▶ 进度:")
@@ -266,7 +266,7 @@ class wxAntiSEM(wx.Frame):
         self.proValue = value
 
     def setSuccTime(self, threadID, value):
-        self.curThread.SetLabel(u"▶ 当前进程ID: %s  " % threadID)
+        self.curThread.SetLabel(u"▶ 当前线程ID: %s  " % threadID)
         self.succTime.SetLabel(u"▶ 成功次数: %d  " % value)
 
     def setSuccRatio(self, value):
